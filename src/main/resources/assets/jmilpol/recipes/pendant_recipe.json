@@ -1,0 +1,28 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": 
+	[
+		"###",
+		"#D#",
+		"###"
+	],
+
+	"key": 
+	{
+		"#": 
+		{
+			"item": "jmilpol:pendant"
+		},
+
+		"D": 
+		{
+			"item": "minecraft:dragon_egg"
+		}
+	},
+
+	"result": 
+	{
+		"item": "jmilpol:everlasting_pendant",
+		"count": 1
+	}
+}
