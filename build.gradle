@@ -39,14 +39,18 @@ repositories {
 	maven {
 		name = "thiakil"
 		url = "http://maven.thiakil.com"
-	}
+	}    
+	flatDir {
+        dirs 'libs'
+    }
 }
 
 dependencies {
 	deobfCompile "com.azanor.baubles:Baubles:1.12-1.5.2"
+    deobfCompile "thaumcraft:Thaumcraft:1.12.2:6.1.BETA17"
 	}
 
-version = "1.4.1"
+version = "1.6"
 group = "net.thedudemc.pendantoflife" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "PendantOfLife"
 
