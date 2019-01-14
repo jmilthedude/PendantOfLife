@@ -1,0 +1,33 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": 
+	[
+		"GBG",
+		"BEB",
+		"GBG"
+	],
+
+	"key": 
+	{
+		"G": 
+		{
+			"item": "minecraft:gold_ingot"
+		},
+
+		"B": 
+		{
+			"item": "minecraft:dragon_breath"
+		},
+
+		"E": 
+		{
+			"item": "minecraft:emerald"
+		}
+	},
+
+	"result": 
+	{
+		"item": "jmilpol:pendant",
+		"count": 1
+	}
+}

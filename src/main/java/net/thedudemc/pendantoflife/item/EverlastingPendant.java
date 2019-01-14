@@ -13,7 +13,7 @@ import net.thedudemc.pendantoflife.init.ModItems;
 public class EverlastingPendant extends Item {
 
 	public EverlastingPendant(String name) {
-		this.setUnlocalizedName(name);
+		this.setTranslationKey(name);
 		this.setRegistryName(name);
 		this.setCreativeTab(CreativeTabs.MISC);
 		this.setMaxStackSize(1);

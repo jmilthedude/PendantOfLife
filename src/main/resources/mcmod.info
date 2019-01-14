@@ -3,7 +3,7 @@
   "modid": "jmilpol",
   "name": "Pendant Of Life",
   "description": "Adds a magic item that allows you to keep inventory upon death if it is in your inventory.",
-  "version": "1.6",
+  "version": "1.7",
   "mcversion": "1.12.2",
   "url": "",
   "updateUrl": "",

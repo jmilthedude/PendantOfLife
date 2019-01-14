@@ -15,7 +15,7 @@ import net.thedudemc.pendantoflife.init.BaubleItems;
 public class PendantBauble extends Item implements IBauble {
 
 	public PendantBauble(String name) {
-		this.setUnlocalizedName(name);
+		this.setTranslationKey(name);
 		this.setRegistryName(name);
 		this.setCreativeTab(CreativeTabs.MISC);
 		this.setMaxStackSize(1);

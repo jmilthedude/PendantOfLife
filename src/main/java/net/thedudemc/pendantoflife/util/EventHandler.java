@@ -26,8 +26,13 @@ public class EventHandler {
 
 	@SubscribeEvent
 	public static void registerRecipes(RegistryEvent.Register<IRecipe> event) {
-		if (!Config.recipeEnabled) {
+		if (!Config.everlastingRecipeEnabled) {
 			ResourceLocation recipe = new ResourceLocation("jmilpol:pendant_recipe");
+			IForgeRegistryModifiable<IRecipe> modRegistry = (IForgeRegistryModifiable<IRecipe>) event.getRegistry();
+			modRegistry.remove(recipe);
+		}
+		if (!Config.pendantRecipeEnabled) {
+			ResourceLocation recipe = new ResourceLocation("jmilpol:normal_pendant_recipe");
 			IForgeRegistryModifiable<IRecipe> modRegistry = (IForgeRegistryModifiable<IRecipe>) event.getRegistry();
 			modRegistry.remove(recipe);
 		}
@@ -45,7 +50,7 @@ public class EventHandler {
 
 	public static boolean hasTotem(EntityPlayer player) {
 		for (ItemStack stack : player.inventory.offHandInventory) {
-			if (stack.getItem().getUnlocalizedName().equals("totem")) {
+			if (stack.getItem().getTranslationKey().equals("totem")) {
 				return true;
 			}
 		}

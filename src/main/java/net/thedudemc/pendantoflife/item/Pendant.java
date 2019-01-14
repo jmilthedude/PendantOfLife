@@ -13,7 +13,7 @@ import net.thedudemc.pendantoflife.init.ModItems;
 public class Pendant extends Item {
 
 	public Pendant(String name) {
-		this.setUnlocalizedName(name);
+		this.setTranslationKey(name);
 		this.setRegistryName(name);
 		this.setCreativeTab(CreativeTabs.MISC);
 		this.setMaxStackSize(1);
